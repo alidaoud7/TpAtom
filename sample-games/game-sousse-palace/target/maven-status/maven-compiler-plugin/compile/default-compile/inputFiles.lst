@@ -1,0 +1,10 @@
+/home/daoud/Ali/GTE_3/fwk/atom/sample-games/game-sousse-palace/src/main/java/net/thevpc/gaming/atom/examples/palace/main/model/Brick.java
+/home/daoud/Ali/GTE_3/fwk/atom/sample-games/game-sousse-palace/src/main/java/net/thevpc/gaming/atom/examples/palace/main/model/Prince.java
+/home/daoud/Ali/GTE_3/fwk/atom/sample-games/game-sousse-palace/src/main/java/net/thevpc/gaming/atom/examples/palace/main/presentation/view/sprites/BombView.java
+/home/daoud/Ali/GTE_3/fwk/atom/sample-games/game-sousse-palace/src/main/java/net/thevpc/gaming/atom/examples/palace/main/presentation/view/sprites/ExplosionView.java
+/home/daoud/Ali/GTE_3/fwk/atom/sample-games/game-sousse-palace/src/main/java/net/thevpc/gaming/atom/examples/palace/main/presentation/view/sprites/PrinceView.java
+/home/daoud/Ali/GTE_3/fwk/atom/sample-games/game-sousse-palace/src/main/java/net/thevpc/gaming/atom/examples/palace/main/engine/MainEngine.java
+/home/daoud/Ali/GTE_3/fwk/atom/sample-games/game-sousse-palace/src/main/java/net/thevpc/gaming/atom/examples/palace/main/presentation/controller/MainController.java
+/home/daoud/Ali/GTE_3/fwk/atom/sample-games/game-sousse-palace/src/main/java/net/thevpc/gaming/atom/examples/palace/main/engine/PrinceCollisionTask.java
+/home/daoud/Ali/GTE_3/fwk/atom/sample-games/game-sousse-palace/src/main/java/net/thevpc/gaming/atom/examples/palace/SoussePalaceGame.java
+/home/daoud/Ali/GTE_3/fwk/atom/sample-games/game-sousse-palace/src/main/java/net/thevpc/gaming/atom/examples/palace/main/presentation/view/MainScene.java

@@ -1,0 +1,14 @@
+net/thevpc/gaming/atom/examples/palace/main/presentation/view/sprites/PrinceView.class
+net/thevpc/gaming/atom/examples/palace/main/presentation/view/sprites/ExplosionView.class
+net/thevpc/gaming/atom/examples/palace/main/presentation/view/MainScene.class
+net/thevpc/gaming/atom/examples/palace/main/model/Brick.class
+net/thevpc/gaming/atom/examples/palace/main/engine/PrinceCollisionTask.class
+net/thevpc/gaming/atom/examples/palace/main/engine/MainEngine.class
+net/thevpc/gaming/atom/examples/palace/main/model/Prince.class
+net/thevpc/gaming/atom/examples/palace/SoussePalaceGame.class
+net/thevpc/gaming/atom/examples/palace/main/presentation/controller/MainController.class
+net/thevpc/gaming/atom/examples/palace/main/presentation/view/sprites/BombView.class
+net/thevpc/gaming/atom/examples/palace/main/presentation/view/MainScene$1.class
+net/thevpc/gaming/atom/examples/palace/main/presentation/view/sprites/PrinceView$1.class
+net/thevpc/gaming/atom/examples/palace/main/presentation/controller/MainController$1.class
+net/thevpc/gaming/atom/examples/palace/main/presentation/view/MainScene$2.class
