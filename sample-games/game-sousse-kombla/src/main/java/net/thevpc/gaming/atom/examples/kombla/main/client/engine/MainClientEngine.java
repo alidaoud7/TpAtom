@@ -6,11 +6,15 @@ package net.thevpc.gaming.atom.examples.kombla.main.client.engine;
 
 import net.thevpc.gaming.atom.examples.kombla.main.client.dal.MainClientDAO;
 import net.thevpc.gaming.atom.examples.kombla.main.client.dal.MainClientDAOListener;
+import net.thevpc.gaming.atom.examples.kombla.main.client.dal.rmi.DALClientRMI;
+import net.thevpc.gaming.atom.examples.kombla.main.server.dal.rmi.DALServerRMI;
 import net.thevpc.gaming.atom.examples.kombla.main.shared.engine.AbstractMainEngine;
 import net.thevpc.gaming.atom.examples.kombla.main.shared.model.DynamicGameModel;
 import net.thevpc.gaming.atom.examples.kombla.main.shared.model.StartGameInfo;
 import net.thevpc.gaming.atom.annotations.AtomSceneEngine;
 import net.thevpc.gaming.atom.model.*;
+
+import java.rmi.RemoteException;
 
 
 /**
@@ -27,8 +31,13 @@ public class MainClientEngine extends AbstractMainEngine {
         //put here your MainClientDAO instance
         //dao = new TCPMainClientDAO();
 //        dao = new UDPMainClientDAO();
-
+        try {
+            dao = new DALClientRMI();
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        }
         dao.start(new MainClientDAOListener() {
+
             @Override
             public void onModelChanged(final DynamicGameModel model) {
                 invokeLater(new Runnable() {

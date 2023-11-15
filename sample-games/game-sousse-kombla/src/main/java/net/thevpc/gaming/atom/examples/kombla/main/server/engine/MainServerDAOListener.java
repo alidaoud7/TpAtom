@@ -4,6 +4,7 @@
  */
 package net.thevpc.gaming.atom.examples.kombla.main.server.engine;
 
+import net.thevpc.gaming.atom.examples.kombla.main.server.dal.rmi.DALServerRMI;
 import net.thevpc.gaming.atom.examples.kombla.main.shared.engine.BaseMainEngine;
 import net.thevpc.gaming.atom.examples.kombla.main.shared.model.DynamicGameModel;
 import net.thevpc.gaming.atom.examples.kombla.main.shared.model.StartGameInfo;
@@ -11,6 +12,7 @@ import net.thevpc.gaming.atom.annotations.AtomSceneEngine;
 import net.thevpc.gaming.atom.model.*;
 import net.thevpc.gaming.atom.examples.kombla.main.server.dal.MainServerDAO;
 
+import java.rmi.RemoteException;
 import java.util.stream.Collectors;
 
 /**
@@ -26,7 +28,11 @@ public class MainServerDAOListener extends BaseMainEngine {
     protected void sceneActivating() {
         super.sceneActivating();
         //put here your MainClientDAO instance
-//        dal = new TCPMainServerDAO();
+        try {
+            dal = new DALServerRMI();
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        }
 //        dal = new UDPMainServerDAO();
         dal.start(new net.thevpc.gaming.atom.examples.kombla.main.server.dal.MainServerDAOListener() {
             @Override

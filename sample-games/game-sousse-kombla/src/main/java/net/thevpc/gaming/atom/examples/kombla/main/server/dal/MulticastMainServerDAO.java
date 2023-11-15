@@ -13,7 +13,7 @@ public class MulticastMainServerDAO implements MainServerDAO{
     MulticastSocket serverSocket;
 
     private InetAddress groupAddress;
-    private int groupPort = 9999;
+    private int groupPort = 9854;
     private boolean clientConnected = false;
 
 

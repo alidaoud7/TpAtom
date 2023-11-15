@@ -93,7 +93,7 @@ private int lifes;
         SLabel viesSLabel = scene.getComponent("noname:2");
         viesSLabel.setText(viesLabel);
         if (lifes > 0){
-            lifes = lifes -1;
+            lifes = lifes +1;
         }
     }
 }

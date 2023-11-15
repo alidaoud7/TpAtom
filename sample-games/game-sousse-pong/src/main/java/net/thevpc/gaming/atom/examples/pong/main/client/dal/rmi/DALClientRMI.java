@@ -21,6 +21,7 @@ public class DALClientRMI implements DALClient {
     private ServerOperationsRMI server;
     private ClientOperationsRMI client;
 
+
     public DALClientRMI() throws RemoteException {
     }
 
